@@ -25,6 +25,6 @@ function addCarga(){
     .then((response) => response.json())
     .then(json => {
       // Do something with object
-      console.log(json.quadricep.DATA);
+      console.log(json.quadricep);
     });
 }
