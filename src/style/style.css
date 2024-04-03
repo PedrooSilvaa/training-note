@@ -1,4 +1,66 @@
-#caixa-quadriceps {
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-treinos {
+    padding: 5px;
+    padding-bottom: 20px ;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-treinos h3 {
+    padding: 20px;
+    font-size: 50px;
+}
+.caixa-treinos ul li {
+    width: 100%;
+}
+
+.caixa-treinos ul{
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.caixa-treinos ul li button {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#caixa-abdomen, #caixa-biceps, #caixa-dorsais, #caixa-ombro, #caixa-panturrilha, 
+#caixa-peito, #caixa-posterior, #caixa-triceps, #caixa-quadriceps {
     display: none;
     width: 500px;
     height: 500px;
