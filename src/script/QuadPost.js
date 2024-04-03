@@ -1,18 +1,22 @@
 
-let dataQuad = '20/03/2024';
-
-
-function addCarga(){
+function addQuadriceps(){
   let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/quadriceps';
+  let data = document.getElementById('txt-data').value 
+  let pesoAga = document.getElementById('txt-agachamento').value 
+  let pesoLeg = document.getElementById('txt-leg').value 
+  let pesoHack = document.getElementById('txt-hack').value 
+  let pesoAbdutora = document.getElementById('txt-abdutora').value 
+  let pesoExtensora = document.getElementById('txt-extensora').value 
+  let pesoPassada = document.getElementById('txt-passada').value 
     let body = {
         quadricep: {
-        'data': dataQuad,
-        'agachamento': '23',
-        'legPress': '200',
-        'hack': '20',
-        'abdutora': '10',
-        'extensora': '100',
-        'passada': '100'
+        'data': data,
+        'agachamento': pesoAga,
+        'legPress': pesoLeg,
+        'hack': pesoHack,
+        'abdutora': pesoAbdutora,
+        'extensora': pesoExtensora,
+        'passada': pesoPassada
         }
     }
     fetch(url, {
