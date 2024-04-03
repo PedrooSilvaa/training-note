@@ -6,7 +6,6 @@ let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/dorsais
             "remadaBaixa": 1,
             "puxadaUnilateral": 1,
             "remadaCurvada": 1,
-            "id": 2
         }
     }
     fetch(url, {

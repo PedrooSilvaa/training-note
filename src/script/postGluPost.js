@@ -8,8 +8,7 @@ let body = {
             "stiff": 1,
             "adutora": 1,
             "bulgáro": 1,
-            "elevaçãoPélvica": 1,
-            "id": 2
+            "elevaçãoPélvica": 1
     }
     }
     fetch(url, {

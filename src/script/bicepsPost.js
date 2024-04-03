@@ -5,7 +5,6 @@ let body = {
         "roscaBarraW": 1,
         "roscaBancoInclinado": 1,
         "roscaMarteloCorda": 1,
-        "id": 2
     }
     }
     fetch(url, {
