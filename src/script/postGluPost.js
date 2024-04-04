@@ -9,7 +9,7 @@ function addPosterior(){
     let pesoStiff = document.getElementById('txt-stiff').value + 'kg'
     let pesoAdutora = document.getElementById('txt-adutora').value + 'kg'
     let pesoBulgaro = document.getElementById('txt-bulgaro').value + 'kg'
-    let pesoPelvica = document.getElementById('txt-pelvica').value + 'rep'
+    let pesoPelvica = document.getElementById('txt-pelvica').value + 'kg'
     
     let body = {
         posteriorEGluteo:{
