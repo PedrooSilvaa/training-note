@@ -1,7 +1,7 @@
     
 
 function addPanturrilha(){
-    let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/panturrilha';
+    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/panturrilha';
     
     let data = document.getElementById('txt-data-pantu').value
     let pesoGemeosS = document.getElementById('txt-gemeosS').value + 'KG'

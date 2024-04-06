@@ -1,6 +1,6 @@
     
 function addPeito(){
-    let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/peito';
+    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/peito';
 
     let data = document.getElementById('txt-data-ombro').value
     let pesoCruxifixoM = document.getElementById('txt-cruxifixoM').value + 'KG'

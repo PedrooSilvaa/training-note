@@ -1,5 +1,5 @@
 function VerQuad(){
-let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/quadriceps';
+let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/quadriceps';
 fetch(url)
 .then((response) => response.json())
 .then(json => {

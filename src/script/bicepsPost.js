@@ -1,6 +1,6 @@
 
 function addBiceps() {
-    let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/biceps';
+    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/biceps';
 
     let data = document.getElementById('txt-data-biceps').value
     let pesoRoscaW = document.getElementById('txt-roscaW').value + 'KG'
