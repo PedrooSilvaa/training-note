@@ -2,13 +2,19 @@
 function addAbdomen(){
     let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/abdomen';
     
+    let data = document.getElementById('txt-data-abdomen').value
+    let abdominalI = document.getElementById('txt-abdominalI').value + 'KG'
+    let prancha = document.getElementById('txt-prancha').value + 'KG'
+    let abdominalS = document.getElementById('txt-abdominalS').value + 'KG'
+    let abdominalIF = document.getElementById('txt-abdominalIF').value + 'KG'
+
     let body = {
         abdomen: {
-            "data": 1,
-            "abdominalInfra": 1,
-            "prancha": 1,
-            "abdominalSupra": 1,
-            "abdominalInfraFlexionadas": 1
+            "data": data,
+            "abdominalInfra": abdominalI,
+            "prancha": prancha,
+            "abdominalSupra": abdominalS,
+            "abdominalInfraFlexionadas": abdominalIF
         }
     }
     fetch(url, {
