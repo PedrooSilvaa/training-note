@@ -1,13 +1,23 @@
 
 function addDorsais(){
     let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/dorsais';
-        let body = {
+
+    let data = document.getElementById('txt-data-ombro').value
+    let pesoPuxadaA = document.getElementById('txt-puxadaA').value + 'KG'
+    let pesoRemadaB = document.getElementById('txt-remadaB').value + 'KG'
+    let pesoPuxadaU = document.getElementById('txt-puxadaU').value + 'KG'
+    let pesoRemadaC = document.getElementById('txt-remadaC').value + 'KG'
+    let pesoRemadaS = document.getElementById('txt-remadaS').value + 'KG'
+
+    
+    let body = {
             dorsai: {
-                "data": 1,
-                "puxadaAltaAberta": 1,
-                "remadaBaixa": 1,
-                "puxadaUnilateral": 1,
-                "remadaCurvada": 1,
+                "data": data,
+                "puxadaAltaAberta": pesoPuxadaA,
+                "remadaBaixa": pesoRemadaB,
+                "puxadaUnilateral": pesoPuxadaU,
+                "remadaCurvada": pesoRemadaC,
+                "remadaSerrote": pesoRemadaS
             }
         }
         fetch(url, {

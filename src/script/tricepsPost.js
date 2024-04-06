@@ -3,11 +3,11 @@ function addTriceps(){
     let url = 'https://api.sheety.co/2090c096908a634fb383513960b9d3e6/treino/triceps';
     
     let data = document.getElementById('txt-data-triceps').value
-    let pesoTricepsP = document.getElementById('txt-tricepsP').value
-    let pesoTricepsF = document.getElementById('txt-tricepsF').value
-    let pesoTricepsT = document.getElementById('txt-tricepsT').value
-    let pesoTricepsC = document.getElementById('txt-tricepsC').value
-    let pesoParalela = document.getElementById('txt-paralela').value
+    let pesoTricepsP = document.getElementById('txt-tricepsP').value + 'KG'
+    let pesoTricepsF = document.getElementById('txt-tricepsF').value + 'KG'
+    let pesoTricepsT = document.getElementById('txt-tricepsT').value + 'KG'
+    let pesoTricepsC = document.getElementById('txt-tricepsC').value + 'KG'
+    let pesoParalela = document.getElementById('txt-paralela').value + 'KG'
 
     let body = {
         tricep: {
