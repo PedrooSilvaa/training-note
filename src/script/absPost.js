@@ -9,7 +9,7 @@ function addAbdomen(){
     let abdominalIF = document.getElementById('txt-abdominalIF').value + 'REP'
 
     let body = {
-        abdomen: {
+        abdoman: {
             "data": data,
             "abdominalInfra": abdominalI,
             "prancha": prancha,
@@ -27,6 +27,8 @@ function addAbdomen(){
         .then((response) => response.json())
         .then(json => {
             // Do something with object
-            console.log(json.abdomen);
+            console.log(json.abdoman);
         });
+        
+    document.getElementById('caixa-abdomen').style.display = 'none'
 }

@@ -12,20 +12,21 @@ function addPosterior(){
     let pesoPelvica = document.getElementById('txt-pelvica').value + 'KG'
     
     let body = {
-        posteriorEGluteo:{
-                "data": data,
-                "agachamento": pesoAgachamento,
-                "mesaFlexora": pesoMesa,
-                "cadeiraFlexora": pesoCadeira,
-                "stiff": pesoStiff,
-                "adutora": pesoAdutora,
-                "bulgáro": pesoBulgaro,
-                "elevaçãoPélvica": pesoPelvica
+        posteriorEGluteo: {
+            "data": data,
+            "agachamento": pesoAgachamento,
+            "mesaFlexora":pesoMesa,
+            "cadeiraFlexora": pesoCadeira,
+            "stiff": pesoStiff,
+            "adutora": pesoAdutora,
+            "bulgáro": pesoBulgaro,
+            "elevaçãoPélvica": pesoPelvica,
         }
         }
         fetch(url, {
         method: 'POST',
         body: JSON.stringify(body),
+
         headers:{
             'Content-Type':'application/json'
         }

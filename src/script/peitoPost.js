@@ -33,4 +33,5 @@ function addPeito(){
             // Do something with object
             console.log(json.peito);
         });
+        document.getElementById('caixa-peito').style.display = 'none'
 }

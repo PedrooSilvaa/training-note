@@ -26,4 +26,5 @@ function addPanturrilha(){
             // Do something with object
             console.log(json.panturrilha);
         });
+        document.getElementById('caixa-panturrilha').style.display = 'none'
 }

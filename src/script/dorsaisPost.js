@@ -32,4 +32,6 @@ function addDorsais(){
             // Do something with object
             console.log(json.dorsai);
         });
+        
+    document.getElementById('caixa-dorsais').style.display = 'none'
 }

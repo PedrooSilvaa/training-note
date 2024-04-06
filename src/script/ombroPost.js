@@ -30,4 +30,5 @@ function addOmbro(){
         // Do something with object
         console.log(json.ombro);
         });
+        document.getElementById('caixa-ombro').style.display = 'none'
 }
