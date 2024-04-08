@@ -4,6 +4,31 @@ fetch(url)
 .then((response) => response.json())
 .then(json => {
   // Do something with the data
-    console.log(json.abdomen);
+    console.log(json.abdomen[1].data);
+    let dt = 20240401;
+    let dtFinal = 20240431;
+    let data_execicio;
+    let dataSem;
+    let contador = 0;
+    
+    for(let i = dt; i<= dtFinal; i ++){
+
+      if(json.abdomen[contador].data != null ){
+          data_execicio = json.abdomen[contador].data;
+          contador++
+          dataSem = data_execicio.replace(/\D/g, '');
+        }
+
+        if(dataSem <= i){
+          let pai = document.querySelector("body");
+          let texto = document.createElement('h1');
+
+          pai.appendChild(texto);
+
+          texto.innerText = dataSem;
+        }
+      // console.log(dataSem)
+    }
+
 });
 }
