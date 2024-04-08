@@ -60,7 +60,7 @@ header {
 }
 
 #caixa-abdomen, #caixa-biceps, #caixa-dorsais, #caixa-ombro, #caixa-panturrilha, 
-#caixa-peito, #caixa-posterior, #caixa-triceps, #caixa-quadriceps {
+#caixa-peito, #caixa-posterior, #caixa-triceps, #caixa-quadriceps, #caixa-vizualizar {
     display: none;
     width: 500px;
     height: 500px;
@@ -73,4 +73,35 @@ header {
     align-items: center;
     background-color: black;
     color: white;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+tbody tr td, thead tr th {
+    width: 300px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#local_botao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#local_botao button {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    font-size: 900;
 }

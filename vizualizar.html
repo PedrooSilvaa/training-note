@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
     <title>Document</title>
 </head>
 <body>
     
 
-    <h1>data</h1>
+    <table>
+        <thead>
+            <tr id="titulos">
+                <th>Data</th>
 
-    <button onclick="VerAbdomen()">aperte pedro</button>
+            </tr>
+        </thead>
+        <tbody id="conteudo">           
+        </tbody>
+    </table>
+    <div id="local_botao">
+        <button onclick="VerAbdomen()">Consulte</button>
+    </div>
     
     <script src="src/script/absGet.js"></script>
 </body>

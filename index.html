@@ -30,6 +30,7 @@
                     <li> <button onclick="caixaInserir('dorsais')"> Dorsais </button> </li>
                     <li> <button onclick="caixaInserir('panturrilha')"> Panturrilha </button> </li>
                     <li> <button onclick="caixaInserir('abdomen')"> Abdômen </button> </li>
+                    <li> <button onclick="caixaInserir('vizualizar')"> Vizualizar </button> </li>
                 </ul>
             </div>
 
@@ -232,6 +233,38 @@
                 <input type="text" id="txt-abdominalIF">
 
                 <button onclick="addAbdomen()">Adicionar</button>
+            </div>
+
+            <div id="caixa-vizualizar">
+                <label>Qual Mês</label>
+                <select id="mes">
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+
+                <label>Qual Parte do Corpo</label>
+                <select id="corpo">
+                    <option value="abs">Abdomen</option>
+                    <option value="biceps">Biceps</option>
+                    <option value="dorsais">Dorsais</option>
+                    <option value="ombro">Ombro</option>
+                    <option value="pantu">Panturrilha</option>
+                    <option value="peito">Peito</option>
+                    <option value="post">Posterior</option>
+                    <option value="quad">Quadriceps</option>
+                    <option value="triceps">Triceps</option>
+                </select>
+
             </div>
         </section>
     </main>
