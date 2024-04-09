@@ -8,3 +8,4 @@ function fecharCaixa(caixa) {
     idCaixa = 'caixa-' + caixa
     document.getElementById(idCaixa).style.display = 'none'
 }
+

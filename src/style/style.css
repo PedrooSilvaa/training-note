@@ -60,11 +60,12 @@ header {
 }
 
 #caixa-abdomen, #caixa-biceps, #caixa-dorsais, #caixa-ombro, #caixa-panturrilha, 
-#caixa-peito, #caixa-posterior, #caixa-triceps, #caixa-quadriceps, #caixa-vizualizar {
+#caixa-peito, #caixa-posterior, #caixa-triceps, #caixa-quadriceps, #caixa-vizualizar, #tabela {
     display: none;
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    height: 70%;
     position: absolute;
+    gap: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -84,7 +85,7 @@ table {
 }
 tbody tr td, thead tr th {
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid white;
     align-items: center;
     text-align: center;
     padding: 10px;
