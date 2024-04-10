@@ -30,7 +30,7 @@ function vizualizar(){
 }
 
 function VerAbdomen(mes) {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/abdomen';
+    let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/abdomen';
     fetch(url)
         .then((response) => response.json())
         .then(json => {
@@ -68,120 +68,127 @@ function VerAbdomen(mes) {
 
             for (let i = datainicio; i <= datafinal; i++) {
 
-                if (json.abdomen[contador].data != null) {
-                data_txt = json.abdomen[contador].data;
-                abdInfra_txt = json.abdomen[contador].abdominalInfra;
-                prancha_txt = json.abdomen[contador].prancha;
-                abdSupra_txt = json.abdomen[contador].abdominalSupra;
-                abdInfraFlex_txt = json.abdomen[contador].abdominalInfraFlexionadas;
-                contador++
-                dataSem = data_txt.replace(/\D/g, '');
+               if (json.abdomen[contador].data != null) {
+               data_txt = json.abdomen[contador].data;
+               abdInfra_txt = json.abdomen[contador].abdominalInfra;
+               prancha_txt = json.abdomen[contador].prancha;
+               abdSupra_txt = json.abdomen[contador].abdominalSupra;
+               abdInfraFlex_txt = json.abdomen[contador].abdominalInfraFlexionadas;
+               contador++
+               dataSem = data_txt.replace(/\D/g, '');
             }
             if (dataSem <= i) {
-                console.log("entrei")
-                let tbody = document.getElementById("conteudo");
-                let paiCon = document.createElement('tr');
-                let txtData = document.createElement('td');
-                let txtAbdInfra = document.createElement('td');
-                let txtPrancha = document.createElement('td');
-                let txtAbdSupra = document.createElement('td');
-                let txtAbdInfraFlex = document.createElement('td');
-                
-                console.log('cheguei')
-                tbody.appendChild(paiCon);
-                paiCon.appendChild(txtData);
-                paiCon.appendChild(txtAbdInfra);
-                paiCon.appendChild(txtPrancha);
-                paiCon.appendChild(txtAbdSupra);
-                paiCon.appendChild(txtAbdInfraFlex);
+               let tbody = document.getElementById("conteudo");
+               let paiCon = document.createElement('tr');
+               let txtData = document.createElement('td');
+               let txtAbdInfra = document.createElement('td');
+               let txtPrancha = document.createElement('td');
+               let txtAbdSupra = document.createElement('td');
+               let txtAbdInfraFlex = document.createElement('td');
+               
+               tbody.appendChild(paiCon);
+               paiCon.appendChild(txtData);
+               paiCon.appendChild(txtAbdInfra);
+               paiCon.appendChild(txtPrancha);
+               paiCon.appendChild(txtAbdSupra);
+               paiCon.appendChild(txtAbdInfraFlex);
 
-                txtData.innerText = data_txt;
-                txtAbdInfra.innerText = abdInfra_txt;
-                txtPrancha.innerText = prancha_txt;
-                txtAbdSupra.innerText = abdSupra_txt;
-                txtAbdInfraFlex.innerText = abdInfraFlex_txt;
-             }
-          }
- 
-       });
- }
- 
- function VerDorsais() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/dorsais';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.dorsais);
-       });
- }
- 
- function VerOmbro() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/ombro';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.ombros);
-       });
- }
- 
- function VerTriceps() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/triceps';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.triceps);
-       });
- }
- 
- function VerPanturrilha() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/panturrilha';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.panturrilhas);
-       });
- }
- 
- function VerPeito() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/peito';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.peitos);
-       });
- }
- 
- function VerPosterior() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/posteriorEGluteo';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.posteriorEGluteos);
-       });
- }
- 
- function VerQuad() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/quadriceps';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.quadriceps);
-       });
- }
- 
- function VerBiceps() {
-    let url = 'https://api.sheety.co/e062924c5a972dee5d1a08046e74b444/treino/biceps';
-    fetch(url)
-       .then((response) => response.json())
-       .then(json => {
-          // Do something with the data
-          console.log(json.biceps);
-       });
- }
+               txtData.innerText = data_txt;
+               txtAbdInfra.innerText = abdInfra_txt;
+               txtPrancha.innerText = prancha_txt;
+               txtAbdSupra.innerText = abdSupra_txt;
+               txtAbdInfraFlex.innerText = abdInfraFlex_txt;
+               }
+         }
+
+      });
+}
+
+function VerDorsais() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/dorsais';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.dorsais);
+         console.log(json.dorsais[0].data);
+      });
+}
+
+function VerOmbro() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/ombro';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.ombros);
+         console.log(json.ombros[0].data);
+      });
+}
+
+function VerTriceps() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/triceps';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.triceps);
+         console.log(json.triceps[0].data);
+      });
+}
+
+function VerPanturrilha() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/panturrilha';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.panturrilhas);
+         console.log(json.panturrilhas[0].data);
+
+      });
+}
+
+function VerPeito() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/peito';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.peitos);
+         console.log(json.peitos[0].data);
+      });
+}
+
+function VerPosterior() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/posteriorEGluteo';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.posteriorEGluteos);
+         console.log(json.posteriorEGluteos[0].data);
+      });
+}
+
+function VerQuad() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/quadriceps';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.quadriceps);
+         console.log(json.quadriceps[0].data);
+      });
+}
+
+function VerBiceps() {
+   let url = 'https://api.sheety.co/924f3fdaab1c3fe269aff57a2493cf7d/treino/biceps';
+   fetch(url)
+      .then((response) => response.json())
+      .then(json => {
+         // Do something with the data
+         console.log(json.biceps);
+         console.log(json.biceps[0].data);
+      });
+}
